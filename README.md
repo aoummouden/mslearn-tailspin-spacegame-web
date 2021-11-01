@@ -34,5 +34,8 @@ or trademarks, whether by implication, estoppel or otherwise.
 Testing automatic trigger by update the Read.me file
 =======
 or trademarks, whether by implication, estoppel or otherwise.
+<<<<<<< HEAD
 .....
 >>>>>>> ba7afa211aaca2e2448fb6988f6184c357479517
+=======
+>>>>>>> d2305c7278618d2fa4062722714aad117d2a5636
