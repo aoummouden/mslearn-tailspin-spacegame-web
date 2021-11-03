@@ -60,6 +60,16 @@ steps:
     zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'WebApp-conn'
+    subscriptionId: '682b5440-a773-401d-a2f9-7d777bbe8d13'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'AISU-E2-RG-01'
+    location: 'East US'
+    templateLocation: 'Linked artifact'
+    deploymentMode: 'Incremental'
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
 
